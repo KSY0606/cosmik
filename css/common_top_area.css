@@ -70,6 +70,22 @@ body {
 .right_header > div > p:hover {
     color: #af262d;
 }
+
+#img_ball {
+    width: 70px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    right: -150px;
+    top: -10px;
+}
 /* // top header */
 
 
