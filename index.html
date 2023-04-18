@@ -27,10 +27,11 @@
     <!-- 슬라이드 cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-    <!-- // 슬라이드 cdn -->
-    <style>
-        
-    </style>
+
+    <!-- 햄버거 메뉴 호버시 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/menu_hover.js"></script>
+
 </head>
 <body>
     <!-- wrap -->
@@ -158,8 +159,39 @@
                         </div>
                     </div>
                 </div>
+                <div id="hamburger_menu">
+                    <p class="health">건강</p>
+                    <p class="vitamin">비타민</p>
+                    <p>다이어트</p>
+                    <p>피부관리</p>
+                    <p>케어제품</p>
+                    <p>메이크업</p>
+                    <p>남성제품</p>
+                    <p>식품</p>
+                    <p>생활용품</p>
+                    <p>유아용품</p>
+                </div>
+                <div id="hamburger_middle_menu_health">
+                    <p>근육통/관절</p>
+                    <p>안약/눈건강</p>
+                    <p>소화제</p>
+                    <p>진통/두통</p>
+                    <p>종합감기약</p>
+                    <p>멀미</p>
+                    <p>티눈/무좀</p>
+                    <p>외상제</p>
+                </div>
+                <div id="hamburger_middle_menu_vitamin">
+                    <p>피로회복</p>
+                    <p>비타민/영양제</p>
+                    <p>한방</p>
+                    <p>스태미너</p>
+                    <p>건강보조제</p>
+                    <p>자양강장</p>
+                </div>
             </div>
         </nav>
+        
 
         <div id="img_slide">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -491,32 +523,246 @@
                 </div>
             </div>
             <!-- // 둘째줄 제품 라인 -->
-    
-            
-            <!-- 슬라이드 html 클래스명은 변경하면 안 됨 -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/slide_img01.PNG" alt="테스트"></div>
-                    <div class="swiper-slide"><img src="img/slide_img02.PNG" alt="테스트"></div>
-                    <div class="swiper-slide"><img src="img/slide_img03.PNG" alt="테스트"></div>
-                    <div class="swiper-slide"><img src="img/slide_img04.PNG" alt="테스트"></div>
-                    <div class="swiper-slide"><img src="img/slide_img05.PNG" alt="테스트"></div>
-                    <div class="swiper-slide"><img src="img/slide_img06.PNG" alt="테스트"></div>
-                    <div class="swiper-slide"><img src="img/slide_img07.PNG" alt="테스트"></div>
-                    <div class="swiper-slide"><img src="img/slide_img08.PNG" alt="테스트"></div>
-                </div>
-    
-                <!-- 네비게이션 -->
-                <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
-                <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
-    
-                <!-- 페이징 -->
-                <div class="swiper-pagination"></div>
-            </div>
-            <!-- // 슬라이드 html -->
         </div>
-        <!-- // limited-->
+        <!-- // limited -->
 
+        <!-- 초특가 -->
+        <div id="special_sale">
+            <h2>초특가 판매<span>더보기</span></h2>
+            <!-- 첫째줄 제품 라인 -->
+            <div class="container text-center product_area_top">
+                <div class="row">
+                    <div class="col main_product" title="비오레 UV 아쿠아리치 워터리 젤">
+                        <div class="sale_percent_area">
+                            7%
+                        </div>
+    
+                        <div class="special_sale_img_area">
+                            <img src="img/special_sale_img1.jpg" alt="비오레 UV 아쿠아리치 워터리 젤">
+                        </div>
+    
+                        <div class="product_info_area">
+                            <p class="product_title">
+                                비오레 UV 아쿠아리치 워터리 젤
+                            </p>
+                            <p class="product_content">
+                                화제의 핫 아이템! 다시 칠해도, 덧발라도 감동적으로 가볍다! 마이크로 레벨의 틈새까지 발라 얼룩 방지.
+                            </p>
+                            <p class="product_price">
+                                <span>
+                                    7,000원
+                                </span>
+                                <span>
+                                    7,410원
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col main_product" title="유니참 초쾌적 마스크 플리츠 타입 작은 7매입">
+                        <div class="sale_percent_area">
+                            13%
+                        </div>
+    
+                        <div class="special_sale_img_area">
+                            <img src="img/special_sale_img2.jpg" alt="유니참 초쾌적 마스크 플리츠 타입 작은 7매입">
+                        </div>
+    
+                        <div class="product_info_area">
+                            <p class="product_title">
+                                유니참 초쾌적 마스크 플리츠 타입 작은 7매입
+                            </p>
+                            <p class="product_content">
+                                피부에 닿는 감촉이 좋고 착용감이 편안하며 장시간 착용해도 귀가 아프지 않습니다.
+                            </p>
+                            <p class="product_price">
+                                <span>
+                                    6,840원
+                                </span>
+                                <span>
+                                    5,990원
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col main_product" title="쉬크 하이드로5 베이직 콤보팩 홀더(날포함) + 교체날4개">
+                        <div class="sale_percent_area">
+                            11%
+                        </div>
+    
+                        <div class="special_sale_img_area">
+                            <img src="img/special_sale_img3.jpg" alt="쉬크 하이드로5 베이직 콤보팩 홀더(날포함) + 교체날4개">
+                        </div>
+    
+                        <div class="product_info_area">
+                            <p class="product_title">
+                                쉬크 하이드로5 베이직 콤보팩 홀더(날포함) + 교체날4개
+                            </p>
+                            <p class="product_content">
+                                "하이드로 글라이드 젤"에서 40%마찰 감소
+                            </p>
+                            <p class="product_price">
+                                <span>
+                                    33,440원
+                                </span>
+                                <span>
+                                    29,990원
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 첫째줄 제품 라인 -->
+    
+            <!-- 둘째줄 제품 라인 -->
+            <div class="container text-center product_area_bottom">
+                <div class="row">
+                    <div class="col main_product" title="스트롱 와카모토 1000정">
+                        <div class="sale_percent_area">
+                            6%
+                        </div>
+    
+                        <div class="special_sale_img_area">
+                            <img src="img/special_sale_img4.jpg" alt="스트롱 와카모토 1000정">
+                        </div>
+    
+                        <div class="product_info_area">
+                            <p class="product_title">
+                                스트롱 와카모토 1000정
+                            </p>
+                            <p class="product_content">
+                                만성피로,허약체질,소화불량까지 한번에!
+                            </p>
+                            <p class="product_price">
+                                <span>
+                                    27,600원
+                                </span>
+                                <span>
+                                    25,990원
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col main_product" title="DHC 야채 프리미엄 240알">
+                        <div class="sale_percent_area">
+                            16%
+                        </div>
+    
+                        <div class="special_sale_img_area">
+                            <img src="img/special_sale_img5.jpg" alt="DHC 야채 프리미엄 240알">
+                        </div>
+    
+                        <div class="product_info_area">
+                            <p class="product_title">
+                                DHC 야채 프리미엄 240알
+                            </p>
+                            <p class="product_content">
+                                녹황색 채소와 보리 새잎과 양배추 등 총 32종 야채를 담은 보조제(1일 4정 복용)
+                            </p>
+                            <p class="product_price">
+                                <span>
+                                    16.660원
+                                </span>
+                                <span>
+                                    13,990원
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col main_product" title="칼로리미트 성인용(40회분)">
+                        <div class="sale_percent_area">
+                            10%
+                        </div>
+    
+                        <div class="special_sale_img_area">
+                            <img src="img/special_sale_img6.jpg" alt="칼로리미트 성인용(40회분)">
+                        </div>
+    
+                        <div class="product_info_area">
+                            <p class="product_title">
+                                칼로리미트 성인용(40회분)
+                            </p>
+                            <p class="product_content">
+                                칼로리 흡수를 억제하는 자연성분 다이어트 서플리먼트 (식사 전4정),칼로리미트
+                            </p>
+                            <p class="product_price">
+                                <span>
+                                    47,600원
+                                </span>
+                                <span>
+                                    42,990원
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 둘째줄 제품 라인 -->
+        </div>
+        <!-- // special_sale-->
+
+        <!-- Event -->
+        <div id="event_area">
+            <div class="event">
+                <h2>이벤트</h2>
+                <div class="event-pic-frame">
+                    <div class="event-pic ev1">
+                        <a href="html/more_page/event.html">
+                            <img src="img/event_img1.jpg" alt="가을추천이벤트 사진">
+                        </a>
+                    </div>
+                    <div class="event-pic ev2 ">
+                        <a href="html/more_page/event.html">
+                            <img src="img/event_img2.jpg" alt="여수이벤트 사진">
+                        </a>
+                    </div>
+                    <div class="event-pic ev3">
+                        <a href="html/more_page/event.html">
+                            <img src="img/event_img3.jpg" alt="일본이벤트 사진">
+                        </a>
+                    </div>
+                    <div class="event-pic ev4">
+                        <a href="html/more_page/event.html">
+                            <img src="img/event_img4.jpg" alt="제휴할인이벤트 사진">
+                        </a>
+                    </div>
+                    <div class="event-pic ev5">
+                        <a href="html/more_page/event.html">
+                            <img src="img/event_img5.jpg" alt="펜션이벤트 사진">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Event -->
+
+        <!--
+         슬라이드 html 클래스명은 변경하면 안 됨
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/slide_img01.PNG" alt="테스트"></div>
+                <div class="swiper-slide"><img src="img/slide_img02.PNG" alt="테스트"></div>
+                <div class="swiper-slide"><img src="img/slide_img03.PNG" alt="테스트"></div>
+                <div class="swiper-slide"><img src="img/slide_img04.PNG" alt="테스트"></div>
+                <div class="swiper-slide"><img src="img/slide_img05.PNG" alt="테스트"></div>
+                <div class="swiper-slide"><img src="img/slide_img06.PNG" alt="테스트"></div>
+                <div class="swiper-slide"><img src="img/slide_img07.PNG" alt="테스트"></div>
+                <div class="swiper-slide"><img src="img/slide_img08.PNG" alt="테스트"></div>
+            </div>
+
+            네비게이션
+            <div class="swiper-button-next"></div>다음 버튼 (오른쪽에 있는 버튼) 
+            <div class="swiper-button-prev"></div>이전 버튼
+
+            페이징
+            <div class="swiper-pagination"></div>
+        </div>
+        // 슬라이드 html 
+    -->
     </div>
     <!-- // wrap -->
 
