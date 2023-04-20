@@ -255,9 +255,12 @@ body {
     background-color: #f5f1f1;
 }
 
-#hamburger_middle_menu_health, #hamburger_middle_menu_vitamin {
+#hamburger_middle_menu_health, #hamburger_middle_menu_vitamin, #hamburger_middle_menu_diet, #hamburger_middle_menu_skin,
+#hamburger_middle_menu_care, #hamburger_middle_menu_makeup, #hamburger_middle_menu_man, #hamburger_middle_menu_food,
+#hamburger_middle_menu_life, #hamburger_middle_menu_child {
     background-color: white;
     width: 200px;
+    height: 400.8px;
     position: absolute;
     border-top: 1px solid #999;
     z-index: 999;
@@ -265,13 +268,17 @@ body {
     cursor: pointer;
     display: none;
 }
-#hamburger_middle_menu_health > p, #hamburger_middle_menu_vitamin > p {
+#hamburger_middle_menu_health > p, #hamburger_middle_menu_vitamin > p,#hamburger_middle_menu_diet > p, #hamburger_middle_menu_skin > p,
+#hamburger_middle_menu_care > p,#hamburger_middle_menu_makeup > p,#hamburger_middle_menu_man > p,#hamburger_middle_menu_food > p,
+#hamburger_middle_menu_life > p,#hamburger_middle_menu_child > p {
     text-align: center;
     margin: 0;
     padding: 8px 0;
     cursor: pointer;
 }
-#hamburger_middle_menu_health > p:hover, #hamburger_middle_menu_vitamin > p:hover {
+#hamburger_middle_menu_health > p:hover, #hamburger_middle_menu_vitamin > p:hover, #hamburger_middle_menu_diet > p:hover, #hamburger_middle_menu_skin > p:hover,
+#hamburger_middle_menu_care > p:hover, #hamburger_middle_menu_makeup > p:hover, #hamburger_middle_menu_man > p:hover, #hamburger_middle_menu_food > p:hover,
+#hamburger_middle_menu_life > p:hover, #hamburger_middle_menu_child > p:hover {
     color: #af262d;
     background-color: #f5f1f1;
 }
