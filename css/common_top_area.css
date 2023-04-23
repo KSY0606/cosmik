@@ -325,7 +325,14 @@ li > span:nth-child(2) {
     display: inline-block;
     width: 110px;
 }
-
-
-
 /* // chart */
+
+/* 사이드바 */
+#side_bar {
+    position: fixed;
+    right: 0;
+    top: 19%;
+}
+#side_bar > p {
+    margin: 0;
+}
