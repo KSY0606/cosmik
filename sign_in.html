@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인창</title>
+
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- 헤더 말풍선, 검색어 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/moving.js"></script>
+
+    <!-- 헤더,푸터 공통 css -->
+    <link rel="stylesheet" href="css/common_top_area.css">
+
+    <!-- 햄버거 메뉴 호버시 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/menu_hover.js"></script>
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="img/logo.ico">
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <header id="header_area">
+            <div class="left_header">
+                <div class="since">
+                    <div id="facebook">
+                        <img src="img/facebook.png" alt="페이스북 바로가기">
+                    </div>
+                    <div id="insta">
+                        <img src="img/insta.png" alt="인스타 바로가기">
+                    </div>
+                    <div id="blog">
+                        <img src="img/blog.png" alt="블로그 바로가기">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="right_header">
+                <div>
+                    <p>
+                        <a href="sign_in.html">
+                            로그인
+                        </a>
+                    </p>
+                    <p>
+                        <a href="sign_up.html">
+                            회원가입
+                        </a>
+                    </p>
+                    <p>
+                        <a href="customer_center.html">
+                            고객센터
+                        </a>
+                    </p>
+                </div>
+                <div id="img_ball">
+                    2,000원 할인
+                </div>
+            </div>
+        </header>
+    
+        <div id="logo_area">
+            <div class="logo">
+                <img src="img/logo.png" alt="cosmik logo">
+            </div>
+    
+            <div class="search">
+                <div>
+                    <input type="text" class="search_bar" placeholder="상품을 검색해주세요">
+                    <i class="bi bi-search"></i>
+                </div>
+            </div>
+    
+            <div class="icon">
+                <div class="heart">
+                    <p class="icons">
+                        <i class="bi bi-heart"></i>
+                    </p>
+                    <p class="icons_ch">
+                        <i class="bi bi-heart-fill"></i>
+                    </p>
+                    <p>
+                        관심상품
+                    </p>
+                </div>
+                <div class="shipping">
+                    <p class="icons">
+                        <i class="bi bi-bus-front"></i>
+                    </p>
+                    <p class="icons_ch">
+                        <i class="bi bi-bus-front-fill"></i>
+                    </p>
+                    <p>
+                        배송조회
+                    </p>
+                </div>
+                <div class="basket">
+                    <p class="icons">
+                        <i class="bi bi-cart"></i>
+                    </p>
+                    <p class="icons_ch">
+                        <i class="bi bi-cart-fill"></i>
+                    </p>
+                    <p>
+                        장바구니
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <nav id="category_area">
+            <div id="category">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col hamburger">
+                            <img src="img/hamburger.png" alt="햄버거 모양 아이콘">
+                        </div>
+                        <div class="col nav_category">
+                            이벤트
+                        </div>
+                        <div class="col nav_category">
+                            베스트101
+                        </div>
+                        <div class="col nav_category">
+                            신상품
+                        </div>
+                        <div class="col nav_category">
+                            한정수량
+                        </div>
+                        <div class="col-2 nav_category">
+                            면세점보다 저렴한
+                        </div>
+                        <div class="col nav_category">
+                            99초특가
+                        </div>
+                        <div class="col nav_category">
+                            가성비갑
+                        </div>
+                        <div class="col nav_category">
+                            
+                        </div>
+                        <div class="col-2 ranking">
+                            <span>
+                                1. 시세이도 
+                            </span>
+                            <span>
+                                <i class="bi bi-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="hamburger_menu">
+                    <p class="health">건강</p>
+                    <p class="vitamin">비타민</p>
+                    <p class="diet">다이어트</p>
+                    <p class="skin">피부관리</p>
+                    <p class="care">케어제품</p>
+                    <p class="makeup">메이크업</p>
+                    <p class="man">남성제품</p>
+                    <p class="food">식품</p>
+                    <p class="life">생활용품</p>
+                    <p class="child">유아용품</p>
+                </div>
+                <div id="hamburger_middle_menu_health">
+                    <p>근육통/관절</p>
+                    <p>안약/눈건강</p>
+                    <p>소화제</p>
+                    <p>진통/두통</p>
+                    <p>종합감기약</p>
+                    <p>멀미</p>
+                    <p>티눈/무좀</p>
+                    <p>외상제</p>
+                </div>
+                <div id="hamburger_middle_menu_vitamin">
+                    <p>피로회복</p>
+                    <p>비타민/영양제</p>
+                    <p>한방</p>
+                    <p>스태미너</p>
+                    <p>건강보조제</p>
+                    <p>자양강장</p>
+                </div>
+                <div id="hamburger_middle_menu_diet">
+                    <p>디톡스</p>
+                    <p>체지방분해</p>
+                    <p>복부비만</p>
+                    <p>하체 슬리밍</p>
+                    <p>다이어트식품</p>
+                    <p>스포츠용품</p>
+                </div>
+                <div id="hamburger_middle_menu_skin">
+                    <p>여드름</p>
+                    <p>피부치료</p>
+                    <p>기미/잡티</p>
+                    <p>콜라겐</p>
+                    <p>건강보조제</p>
+                    <p>자양강장</p>
+                </div>
+                <div id="hamburger_middle_menu_care">
+                    <p>스킨케어</p>
+                    <p>클렌징</p>
+                    <p>바디케어</p>
+                    <p>헤어케어</p>
+                </div>
+                <div id="hamburger_middle_menu_makeup">
+                    <p>베이스/BB크림</p>
+                    <p>파운데이션</p>
+                    <p>립 메이크업</p>
+                    <p>아이 메이크업</p>
+                    <p>블러셔</p>
+                    <p>네일케어</p>
+                    <p>메이크업 용품</p>
+                </div>
+                <div id="hamburger_middle_menu_man">
+                    <p>스킨케어</p>
+                    <p>바디케어</p>
+                    <p>헤어케어</p>
+                    <p>세안</p>
+                    <p>클렌징시트</p>
+                    <p>쉐이빙</p>
+                </div>
+                <div id="hamburger_middle_menu_food">
+                    <p>즉석식품</p>
+                    <p>카레/수프</p>
+                    <p>커피/차</p>
+                    <p>다이어트 식품</p>
+                    <p>라면</p>
+                    <p>젤리/사탕/초콜릿</p>
+                    <p>조미료/소스</p>
+                    <p>과자/시리얼</p>
+                    <p>유아식품</p>
+                </div>
+                <div id="hamburger_middle_menu_life">
+                    <p>주거용품</p>
+                    <p>주방용품</p>
+                    <p>세탁용품</p>
+                    <p>욕실용품</p>
+                    <p>구강케어</p>
+                    <p>면도기/면도날</p>
+                </div>
+                <div id="hamburger_middle_menu_child">
+                    <p>스킨케어</p>
+                    <p>바디워시</p>
+                    <p>헤어케어</p>
+                    <p>바디케어</p>
+                    <p>젖병/젖꼭지</p>
+                    <p>위생용품</p>
+                    <p>유아식품</p>
+                </div>
+            </div>
+        </nav>
+    
+        
+
+
+
+
+
+
+        <footer id="footer">
+            <div id="footer_wrap">
+                <div id="footer_inner_left">
+                    <h3>고객센터</h3>
+                    <p>000-0000-0000</p>
+                    <div class="info">
+                        <p>평일상담 : 09:00 ~ 18:00 / 점심시간 : 12:00 ~ 13:00</p>
+                        <p><span>토요일, 일요일 및 법정공휴일은 휴무</span>입니다.</p>
+                        <p><span>근무시간 외의 상담은 카카오톡 또는 게시판</span>에 남겨주시면</p>
+                        <p>순차적으로 답변 드리겠습니다.</p>
+                        <p>이메일 : help@cosmik.jp</p>
+                    </div>
+                    <div class="container text-center sns_icon">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/카카오톡.png" alt="카카오톡 바로가기">
+                            </div>
+                            <div class="col">
+                                <img src="img/insta.png" alt="인스타 바로가기">
+                            </div>
+                            <div class="col">
+                                <img src="img/blog.png" alt="블로그 바로가기">
+                            </div>
+                            <div class="col">
+                                <img src="img/facebook.png" alt="페이스북 바로가기">
+                            </div>
+                            <div class="col">
+                                <img src="img/유튜브.png" alt="유튜브 바로가기">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer_inner_right">
+                    <div>
+                        <p>HOME</p>
+                        <p>회사소개</p>
+                        <p>이용약관</p>
+                        <p>고객센터</p>
+                    </div>
+                    <p>상호명 : MIK JAPAN Co., Ltd.</p>
+                    <p>사업장주소 : 〒535-0012 大阪市旭区千林2-11-24 &nbsp; MIK千林ビル3階</p>
+                    <p>Copyright ⓒ 2014 MIK JAPAN all Rights Reserved.</p>
+                    <div>
+                        <h3>공지사항 <span>더보기</span></h3>
+                        <p>배송비 이벤트</p>
+                        <p>3월 1주차 이벤트</p>
+                        <p>3월 2주차 이벤트</p>
+                        <p>3월 3주차 이벤트</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="side_bar">
+            <p>
+                <a href="#">
+                    <img src="img/side_bar_img.png" alt="개인통관번호">
+                </a>
+            </p>
+            <p>
+                <a href="#">
+                    <img src="img/side_bar_QnA.png" alt="자주하는 질문">
+                </a>
+            </p>
+            <p>
+                <a href="#">
+                    <img src="img/side_bar_center.png" alt="고객센터">
+                </a>
+            </p>
+            <p>
+                <a href="#">
+                    <img src="img/side_bar_shipping.png" alt="배송조회">
+                </a>
+            </p>
+            <p>
+                <a href="#">
+                    <img src="img/side_bar_basket.png" alt="장바구니">
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- // wrap -->
+</body>
+</html>

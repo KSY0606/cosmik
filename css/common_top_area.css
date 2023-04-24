@@ -7,6 +7,10 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     color: black;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 
 #header_area, #logo_area, #category {
     width: 1130px;
@@ -67,7 +71,7 @@ body {
     margin-top: 4px;
     cursor: pointer;
 }
-.right_header > div > p:hover {
+.right_header > div > p > a:hover {
     color: #af262d;
 }
 
