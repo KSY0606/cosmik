@@ -27,6 +27,10 @@
 
     <!-- 파비콘 -->
     <link rel="icon" href="img/logo.ico">
+
+    <!-- 로그인 css -->
+    <link rel="stylesheet" href="css/sign/sign_in.css">
+
 </head>
 <body>
     <!-- wrap -->
@@ -72,7 +76,9 @@
     
         <div id="logo_area">
             <div class="logo">
-                <img src="img/logo.png" alt="cosmik logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="cosmik logo">
+                </a>
             </div>
     
             <div class="search">
@@ -260,12 +266,62 @@
             </div>
         </nav>
     
-        
+        <div id="sign_in_area">
+            <div id="sign_in_top">
+                <p>
+                    로그인
+                </p>
 
+                <p>
+                    <span><img src="img/home_icon.gif" alt="home 아이콘"></span>
+                    <span>></span>
+                    <span>회원서비스</span>
+                    <span>></span>
+                    <span>로그인</span>
+                </p>
+            </div>
 
+            <div id="sign_in_bottom">
+                <div id="sign_in_select">
+                    <span>회원로그인</span>
+                    <span>비회원로그인</span>
+                </div>
+                <div id="sign_in_info">
+                    <div id="id_pw_info">
+                        <p>
+                            <p>
+                                <label for="id">아이디</label>
+                                <input type="id" name="id" placeholder="ID" maxlength="20" autofocus>
+                            </p>
+                            <p>
+                                <label for="pwd">비밀번호</label>
+                                <input type="password" name="pwd" placeholder="Password" maxlength="20">
+                            </p>
+                        </p>
+                        <p>
+                            로그인
+                        </p>
+                    </div>
 
+                    <div>
+                        <input type="checkbox"> 아이디 저장
+                    </div>
 
+                    <div>
+                        <p>※ 네이버 아이디로 가입하신 회원분들은 클릭해주세요.</p>
+                        <p>※ 카카오 계정 회원 분들은 회원 로그인 란에 로그인 해주시면 됩니다.</p>
+                    </div>
 
+                    <div>
+                        <p>
+                            <button>회원가입</button>
+                            <button>아이디 찾기</button>
+                            <button>비밀번호 찾기</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer id="footer">
             <div id="footer_wrap">

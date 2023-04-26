@@ -1,0 +1,28 @@
+/* 로그인 */
+#sign_in_area {
+    width: 1130px;
+    margin-top: 20px;
+}
+
+#sign_in_top {
+    border-bottom: 2px solid black;
+    height: 30px;
+}
+
+#sign_in_top > p:nth-child(1) {
+    margin: 0;
+    float: left;
+    font-weight: bold;
+}
+#sign_in_top > p:nth-child(2) {
+    margin: 0;
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#sign_in_bottom {
+    width: 550px;
+    margin-top: 50px;
+    background-color: violet;
+}
