@@ -30,7 +30,9 @@
 
     <!-- 로그인 css -->
     <link rel="stylesheet" href="css/sign/sign_in.css">
-
+    <!-- 로그인 js -->
+    <script src="js/sign/sing_in_select.js"></script>
+    
 </head>
 <body>
     <!-- wrap -->
@@ -283,12 +285,13 @@
 
             <div id="sign_in_bottom">
                 <div id="sign_in_select">
-                    <span>회원로그인</span>
-                    <span>비회원로그인</span>
+                    <p>회원로그인</p>
+                    <p>비회원로그인</p>
                 </div>
+                <!-- 회원 로그인 -->
                 <div id="sign_in_info">
-                    <div id="id_pw_info">
-                        <p>
+                    <form id="id_pw_info" method="post">
+                        <div>
                             <p>
                                 <label for="id">아이디</label>
                                 <input type="id" name="id" placeholder="ID" maxlength="20" autofocus>
@@ -297,22 +300,22 @@
                                 <label for="pwd">비밀번호</label>
                                 <input type="password" name="pwd" placeholder="Password" maxlength="20">
                             </p>
-                        </p>
-                        <p>
-                            로그인
-                        </p>
-                    </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Login">
+                        </div>
+                    </form>
 
-                    <div>
+                    <div id="id_check">
                         <input type="checkbox"> 아이디 저장
                     </div>
 
-                    <div>
+                    <div id="sns_explanation">
                         <p>※ 네이버 아이디로 가입하신 회원분들은 클릭해주세요.</p>
                         <p>※ 카카오 계정 회원 분들은 회원 로그인 란에 로그인 해주시면 됩니다.</p>
                     </div>
 
-                    <div>
+                    <div id="find_info">
                         <p>
                             <button>회원가입</button>
                             <button>아이디 찾기</button>
@@ -320,6 +323,31 @@
                         </p>
                     </div>
                 </div>
+                <!-- // 회원 로그인 -->
+
+                <!-- 비회원 로그인 -->
+                <div id="non_info">
+                    <form id="non_info_detail" method="post">
+                        <div>
+                            <p>
+                                <label for="name">주문자명</label>
+                                <input type="text" name="name"  maxlength="10" autofocus>
+                            </p>
+                            <p>
+                                <label for="number">주문번호</label>
+                                <input type="text" name="number" maxlength="100">
+                            </p>
+                            <p>
+                                <label for="non_pwd">비밀번호</label>
+                                <input type="password" name="non_pwd" maxlength="100">
+                            </p>
+                        </div>
+                        <div>
+                            <input type="submit" value="Login">
+                        </div>
+                    </form>
+                </div>
+                <!-- // 비회원 로그인 -->
             </div>
         </div>
 
