@@ -112,6 +112,9 @@
     height: 28px;
     margin-right: 10px;
 }
+#find_info > p > button > a {
+    color: black;
+}
 
 
 /* 비회원 로그인 */
@@ -130,6 +133,9 @@
 #non_info_detail > div:nth-child(1) {
     float: left;
     width: 270px;
+}
+#non_info_detail > div:nth-child(1) > p > label {
+    margin-right: 5px;
 }
 #non_info_detail > div:nth-child(2) {
     width: 100px;

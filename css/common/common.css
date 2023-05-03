@@ -18,10 +18,10 @@ a {
 /* // 기본 레이아웃 */
 
 
+
 /* top header */
 #header_area {
     height: 40px;
-    margin-top: 10px;
 }
 
 .left_header, .right_header {
@@ -288,6 +288,7 @@ a {
 }
 
 /* // bot header*/
+
 
 /* chart */
 #chart {

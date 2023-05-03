@@ -13,13 +13,11 @@
 
     <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <!-- 헤더 말풍선, 검색어 -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/moving.js"></script>
 
     <!-- 헤더,푸터 공통 css -->
-    <link rel="stylesheet" href="css/common_top_area.css">
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/common/header.css">
+    <link rel="stylesheet" href="css/common/footer.css">
 
     <!-- 메인 css -->
     <link rel="stylesheet" href="css/index.css">
@@ -29,52 +27,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
     <!-- 햄버거 메뉴 호버시 -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/menu_hover.js"></script>
+    <script src="js/common/jquery-3.6.0.min.js"></script>
+    <script src="js/common/menu_hover.js"></script>
 
     <!-- 파비콘 -->
     <link rel="icon" href="img/logo.ico">
+
 </head>
 <body>
     <!-- wrap -->
     <div id="wrap">
         <header id="header_area">
-            <div class="left_header">
-                <div class="since">
-                    <div id="facebook">
-                        <img src="img/facebook.png" alt="페이스북 바로가기">
-                    </div>
-                    <div id="insta">
-                        <img src="img/insta.png" alt="인스타 바로가기">
-                    </div>
-                    <div id="blog">
-                        <img src="img/blog.png" alt="블로그 바로가기">
+            <header id="header_area">
+                <div class="left_header">
+                    <div class="since">
+                        <div id="facebook">
+                            <img src="img/facebook.png" alt="페이스북 바로가기">
+                        </div>
+                        <div id="insta">
+                            <img src="img/insta.png" alt="인스타 바로가기">
+                        </div>
+                        <div id="blog">
+                            <img src="img/blog.png" alt="블로그 바로가기">
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="right_header">
-                <div>
-                    <p>
-                        <a href="sign_in.html">
-                            로그인
-                        </a>
-                    </p>
-                    <p>
-                        <a href="sign_up.html">
-                            회원가입
-                        </a>
-                    </p>
-                    <p>
-                        <a href="customer_center.html">
-                            고객센터
-                        </a>
-                    </p>
+        
+                <div class="right_header">
+                    <div>
+                        <p>
+                            <a href="sign_in.html">
+                                로그인
+                            </a>
+                        </p>
+                        <p>
+                            <a href="sign_up.html">
+                                회원가입
+                            </a>
+                        </p>
+                        <p>
+                            <a href="customer_center.html">
+                                고객센터
+                            </a>
+                        </p>
+                    </div>
+                    <div id="img_ball">
+                        2,000원 할인
+                    </div>
                 </div>
-                <div id="img_ball">
-                    2,000원 할인
-                </div>
-            </div>
+            </header>
         </header>
     
         <div id="logo_area">
@@ -83,14 +84,14 @@
                     <img src="img/logo.png" alt="cosmik logo">
                 </a>
             </div>
-    
+        
             <div class="search">
                 <div>
                     <input type="text" class="search_bar" placeholder="상품을 검색해주세요">
                     <i class="bi bi-search"></i>
                 </div>
             </div>
-    
+        
             <div class="icon">
                 <div class="heart">
                     <p class="icons">
@@ -943,57 +944,7 @@
                 </a>
             </p>
         </div>
-
-        <!--
-        슬라이드 html 클래스명은 변경하면 안 됨
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/slide_img01.PNG" alt="테스트"></div>
-                <div class="swiper-slide"><img src="img/slide_img02.PNG" alt="테스트"></div>
-                <div class="swiper-slide"><img src="img/slide_img03.PNG" alt="테스트"></div>
-                <div class="swiper-slide"><img src="img/slide_img04.PNG" alt="테스트"></div>
-                <div class="swiper-slide"><img src="img/slide_img05.PNG" alt="테스트"></div>
-                <div class="swiper-slide"><img src="img/slide_img06.PNG" alt="테스트"></div>
-                <div class="swiper-slide"><img src="img/slide_img07.PNG" alt="테스트"></div>
-                <div class="swiper-slide"><img src="img/slide_img08.PNG" alt="테스트"></div>
-            </div>
-
-            네비게이션
-            <div class="swiper-button-next"></div>다음 버튼 (오른쪽에 있는 버튼) 
-            <div class="swiper-button-prev"></div>이전 버튼
-
-            페이징
-            <div class="swiper-pagination"></div>
-        </div>
-        // 슬라이드 html -->
     </div>
     <!-- // wrap -->
-
-
-    <!-- 슬라이드 js -->
-    <script>
-        new Swiper('.swiper-container', {
-        
-            slidesPerView : 4, // 동시에 보여줄 슬라이드 갯수
-            spaceBetween : 30, // 슬라이드간 간격s
-            slidesPerGroup : 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
-        
-            // 그룹수가 맞지 않을 경우 빈칸으로 메우기
-            // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
-            loopFillGroupWithBlank : true,
-        
-            loop : true, // 무한 반복
-        
-            pagination : { // 페이징
-                el : '.swiper-pagination',
-                clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
-            },
-            navigation : { // 네비게이션
-                nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-                prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
-            },
-        });
-    </script>
-    <!-- // 슬라이드 js -->
 </body>
 </html>

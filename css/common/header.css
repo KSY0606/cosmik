@@ -1,0 +1,270 @@
+
+/* top header */
+#header_area {
+    height: 40px;
+}
+
+.left_header, .right_header {
+    height: 40px;
+}
+.left_header {
+    float: left;
+    width: 60%;
+}
+
+.since {
+    width: 150px;
+    height: 30px;
+    margin: 0;
+    margin-top: 4px;
+    text-align: center;
+}
+#facebook, #insta, #blog {
+    float: left;
+    height: 30px;
+    margin-left: 16.66px;
+}
+#facebook > img, #insta > img, #blog > img {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.right_header {
+    float: right;
+    width: 40%;
+}
+.right_header> div {
+    height: 40px;
+    text-align: right;
+}
+.right_header > div > p {
+    display: inline-block;
+    margin: 0;
+    height: 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0 4px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.right_header > div > p > a:hover {
+    color: #af262d;
+}
+
+#img_ball {
+    width: 70px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    right: -150px;
+    top: -10px;
+}
+/* // top header */
+
+
+/* mid header */
+/* logo */
+#logo_area {
+    margin-top: 40px;
+}
+
+.logo {
+    width: 26%;
+    height: 80px;
+    float: left;
+}
+.logo > a > img {
+    width: 180px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+/* // logo */
+
+/* search */
+.search {
+    float: left;
+    width: 49%;
+    height: 80px;
+    
+}
+.search > div {
+    text-align: center;
+    height: 80px;
+}
+.search > div > input {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #af262d;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.search > div > input:focus {
+    outline: 1px solid #af262d;
+}
+.search > div > i {
+    position: relative;
+    left: -35px;
+}
+/* // search */
+
+/* icon */
+.icon {
+    float: right;
+    width: 25%;
+    height: 80px;
+}
+.heart, .shipping, .basket {
+    float: left;
+    width: 59px;
+    margin-top: 5.5px;
+    cursor: pointer;
+}
+.heart {
+    margin-left: 55px;
+}
+.shipping, .basket {
+    margin-left: 25px;
+}
+
+.heart > p:nth-child(1), .shipping > p:nth-child(1), .basket > p:nth-child(1) {
+    font-size: 30px;
+    text-align: center;
+    height: 45px;
+    margin: 0;
+}
+.shipping > p:nth-child(1) > img, .shipping > p:nth-child(2) > img {
+    width: 40px;
+}
+
+/*.heart > p:nth-child(3), .shipping > p:nth-child(3), .basket > p:nth-child(3) {
+    margin: 0;
+}*/
+.heart:hover p:nth-child(3), .shipping:hover p:nth-child(3), .basket:hover p:nth-child(3) {
+    color: #af262d;
+    font-weight: bold;
+}
+
+.icons_ch {
+    font-size: 30px;
+    text-align: center;
+    height: 45px;
+    margin: 0;
+    display: none;
+}
+.heart:hover .icons, .basket:hover .icons, .shipping:hover > .icons {
+    display: none;
+}
+.heart:hover .icons_ch, .basket:hover .icons_ch, .shipping:hover > .icons_ch {
+    display: block;
+}
+/* // icon */
+/* // mid header */
+
+
+/* bot header*/
+#category_area {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    height: 62.55px;
+    margin-top: 150px;
+}
+#category {
+    margin-top: 18px;
+}
+.hamburger {
+    height: 43px;
+}
+.hamburger > img{
+    width: 25px;
+}
+.nav_category {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+.nav_category:hover {
+    color: #af262d;
+}
+.row > div:nth-child(2) {
+    color: #0B412E;
+}
+
+.ranking {
+    border-left: 1px solid #999;
+    cursor: pointer;
+}
+.ranking > span:nth-child(1) {
+    display: inline-block;
+    width: 135px;
+    height: 30px;
+    padding-top: 3px;
+}
+.ranking > span:nth-child(2) {
+    margin-left: 5px;
+}
+
+#hamburger_menu {
+    background-color: white;
+    width: 200px;
+    position: absolute;
+    border-top: 1px solid #999;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}
+#hamburger_menu > p {
+    text-align: center;
+    margin: 0;
+    padding: 8px 0;
+    cursor: pointer;
+}
+#hamburger_menu > p:hover {
+    color: #af262d;
+    background-color: #f5f1f1;
+}
+
+#hamburger_middle_menu_health, #hamburger_middle_menu_vitamin, #hamburger_middle_menu_diet, #hamburger_middle_menu_skin,
+#hamburger_middle_menu_care, #hamburger_middle_menu_makeup, #hamburger_middle_menu_man, #hamburger_middle_menu_food,
+#hamburger_middle_menu_life, #hamburger_middle_menu_child {
+    background-color: white;
+    width: 200px;
+    height: 400.8px;
+    position: absolute;
+    border-top: 1px solid #999;
+    z-index: 999;
+    margin-left: 200px;
+    cursor: pointer;
+    display: none;
+}
+#hamburger_middle_menu_health > p, #hamburger_middle_menu_vitamin > p,#hamburger_middle_menu_diet > p, #hamburger_middle_menu_skin > p,
+#hamburger_middle_menu_care > p,#hamburger_middle_menu_makeup > p,#hamburger_middle_menu_man > p,#hamburger_middle_menu_food > p,
+#hamburger_middle_menu_life > p,#hamburger_middle_menu_child > p {
+    text-align: center;
+    margin: 0;
+    padding: 8px 0;
+    cursor: pointer;
+}
+#hamburger_middle_menu_health > p:hover, #hamburger_middle_menu_vitamin > p:hover, #hamburger_middle_menu_diet > p:hover, #hamburger_middle_menu_skin > p:hover,
+#hamburger_middle_menu_care > p:hover, #hamburger_middle_menu_makeup > p:hover, #hamburger_middle_menu_man > p:hover, #hamburger_middle_menu_food > p:hover,
+#hamburger_middle_menu_life > p:hover, #hamburger_middle_menu_child > p:hover {
+    color: #af262d;
+    background-color: #f5f1f1;
+}
+
+/* // bot header*/
