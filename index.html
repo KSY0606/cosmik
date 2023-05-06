@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/common/header.css">
     <link rel="stylesheet" href="css/common/footer.css">
 
+    <!-- 헤더 말풍선 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/common/moving.js"></script>
+
     <!-- 메인 css -->
     <link rel="stylesheet" href="css/index.css">
 
@@ -33,6 +37,7 @@
     <!-- 파비콘 -->
     <link rel="icon" href="img/logo.ico">
 
+    
 </head>
 <body>
     <!-- wrap -->
@@ -943,8 +948,15 @@
                     <img src="img/side_bar_basket.png" alt="장바구니">
                 </a>
             </p>
+            <p>
+                <a>
+                    <i id="btnScrollToTop" class="bi bi-arrow-up-circle"></i>
+                </a>
+            </p>
         </div>
     </div>
     <!-- // wrap -->
+    <!-- 사이드바 상단버튼 클릭시 이동 -->
+    <script src="js/common/scroll_top.js"></script>
 </body>
 </html>

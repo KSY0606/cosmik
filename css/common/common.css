@@ -341,6 +341,13 @@ li > span:nth-child(2) {
 #side_bar > p {
     margin: 0;
 }
+#side_bar > p:nth-child(6) {
+    padding: 40px 0 0 15px;
+}
+#side_bar > p:nth-child(6) > a > i {
+    font-size: 30px;
+    margin-left: 25px;
+}
 
 
 /* footer */
