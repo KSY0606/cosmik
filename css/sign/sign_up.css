@@ -1,0 +1,153 @@
+#sign_up_area {
+    width: 1130px;
+    margin-top: 20px;
+}
+
+
+/* 회원가입 상단 */
+#sign_up_top {
+    border-bottom: 2px solid black;
+    height: 30px;
+}
+
+#sign_up_top > p:nth-child(1) {
+    margin: 0;
+    float: left;
+    font-weight: bold;
+}
+#sign_up_top > p:nth-child(2) {
+    margin: 0;
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* // 회원가입 상단 */
+
+/* 회원가입 하단 */
+#sign_up_bottom {
+    margin-top: 30px;
+}
+
+#info_title {
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#info_content {
+}
+
+#info_content > table {
+    width: 100%;
+}
+tr {
+    border-bottom: 1px solid #777;
+}
+tr > td:nth-child(1) {
+    width: 226px;
+    font-size: 12px;
+    text-align: center;
+    padding: 12px 0;
+    background-color: #f7f7f7;
+}
+
+td:nth-child(2) {
+    padding-left: 10px;
+}
+td:nth-child(2) > input {
+    width: 167px;
+    height: 20px;
+    background-color: #efefef;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+}
+
+.id > td:nth-child(2) > a {
+    width: 90px;
+    height: 20px;
+}
+.id > td:nth-child(2) > a > button {
+    width: 90px;
+    height: 20px;
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+}
+.id > td:nth-child(2) > span {
+    font-size: 11px;
+    color: #777;
+}
+
+.pw > td > span {
+    font-size: 11px;
+    color: #777;
+}
+
+.email {
+    font-size: 12px;
+}
+.email > td:nth-child(2) {
+    padding: 10px 0 10px 10px;
+}
+.email > td:nth-child(2) > select {
+    border-radius: 3px;
+}
+.email > td:nth-child(2) > a > button {
+    width: 90px;
+    height: 20px;
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+}
+.email > td:nth-child(2) > p {
+    margin: 0;
+}
+.email > td:nth-child(2) > p > input {
+    position: relative;
+    bottom: -3px;
+}
+
+.ph_num {
+    font-size: 12px;
+}
+.ph_num > td:nth-child(2) {
+    padding: 10px 0 10px 10px;
+}
+.ph_num > td:nth-child(2) > select {
+    width: 50px;
+    height: 20px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.ph_num > td:nth-child(2) > input {
+    width: 50px;
+    height: 20px;
+    padding-left: 10px;
+}
+.ph_num > td:nth-child(2) > p {
+    margin: 0;
+}
+.ph_num > td:nth-child(2) > p > input {
+    position: relative;
+    bottom: -3px;
+    padding-left: 5px;
+}
+
+.birth {
+    font-size: 12px;
+}
+.birth > td > input {
+    width: 100px;
+}
+
+.male {
+    font-size: 12px;
+}
+.male > td > input {
+    width: 15px;
+    margin-right: 4px;
+    position: relative;
+    top: 5px;
+}
+
+/* 회원가입 하단 */

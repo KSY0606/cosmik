@@ -30,7 +30,9 @@
     <!-- 파비콘 -->
     <link rel="icon" href="img/logo.ico">
 
-    
+    <!-- 로그인 css -->
+    <link rel="stylesheet" href="css/sign/sign_up.css">
+
 </head>
 <body>
     <!-- wrap -->
@@ -266,7 +268,133 @@
             </div>
         </nav>
     
-        
+        <!-- 회원가입 -->
+        <div id="sign_up_area">
+            <div id="sign_up_top">
+                <p>
+                    회원가입
+                </p>
+
+                <p>
+                    <span><img src="img/home_icon.gif" alt="home 아이콘"></span>
+                    <span>></span>
+                    <span>회원가입</span>
+                    <span>></span>
+                    <span>정보입력</span>
+                </p>
+            </div>
+
+            <div id="sign_up_bottom">
+                <div id="info_title">
+                    필수정보
+                </div>
+                <div id="info_content">
+                    <table>
+                        <tr class="id">
+                            <td>아이디</td>
+                            <td>
+                                <input type="text">
+                                <a href="#">
+                                    <button>
+                                        아이디 중복확인
+                                    </button>
+                                </a>
+                                <span>
+                                    아이디는 영문 소문자, 숫자 조합 또는 이메일 형식으로 최소 4자 이상
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>이름</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr class="pw">
+                            <td>비밀번호</td>
+                            <td>
+                                <input type="password">
+                                <span>
+                                    비밀번호는 영문, 숫자, 특수기호 조합으로 최소 8자 이상(사용 불가능한 특수기호 : / ? ; : ' ")
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>비밀번호 확인</td>
+                            <td>
+                                <input type="password">
+                            </td>
+                        </tr>
+                        <tr class="email">
+                            <td>이메일</td>
+                            <td>
+                                <input type="text">&nbsp;@&nbsp;<input type="text">
+                                <select>
+                                    <option>직접입력</option>
+                                    <option>daum.net</option>
+                                    <option>dreamwiz.com</option>
+                                    <option>empas.com</option>
+                                    <option>gmail.com</option>
+                                    <option >hanmail.net</option>
+                                    <option>hotmail.com</option>
+                                    <option>korea.com</option>
+                                    <option >nate.com</option>
+                                    <option>naver.com</option>
+                                    <option>yahoo.com</option>
+                                </select>
+                                <a href="#">
+                                    <button>
+                                        아이디 중복확인
+                                    </button>
+                                </a>
+                                <p>
+                                    <input type="checkbox">
+                                    이메일을 통한 광고 및 이벤트 정보 수신
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="ph_num">
+                            <td>휴대전화</td>
+                            <td>
+                                <select name="user_mobile1">
+                                    <option value="" selected="">선택</option>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                -
+                                <input type="text" maxlength="4">
+                                -
+                                <input type="text" maxlength="4">
+                                <p>
+                                    <input type="checkbox">
+                                    이메일을 통한 광고 및 이벤트 정보 수신
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="birth">
+                            <td>생년월일</td>
+                            <td>
+                                <input type="text" maxlength="4">년
+                                <input type="text" maxlength="2">월
+                                <input type="text" maxlength="2">일
+                            </td>
+                        </tr>
+                        <tr class="male">
+                            <td>성별</td>
+                            <td>
+                                <input type="radio">남자
+                                <input type="radio">여자
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- // 회원가입 -->
 
         <footer id="footer">
             <div id="footer_wrap">
