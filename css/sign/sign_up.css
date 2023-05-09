@@ -10,10 +10,10 @@
     height: 30px;
 }
 
-#sign_up_top > p:nth-child(1) {
+#sign_up_top > h3 {
     margin: 0;
     float: left;
-    font-weight: bold;
+    font-size: 20px;
 }
 #sign_up_top > p:nth-child(2) {
     margin: 0;
@@ -29,9 +29,10 @@
 }
 
 #info_title {
+    margin: 0;
     border-bottom: 3px solid black;
     padding-bottom: 5px;
-    font-weight: bold;
+    font-size: 17px;
 }
 
 #info_content {
@@ -102,7 +103,10 @@ td:nth-child(2) > input {
 .email > td:nth-child(2) > p {
     margin: 0;
 }
-.email > td:nth-child(2) > p > input {
+.email > td:nth-child(2) > p > label {
+    color: #777;
+}
+.email > td:nth-child(2) > p > label > input {
     position: relative;
     bottom: -3px;
 }
@@ -127,7 +131,10 @@ td:nth-child(2) > input {
 .ph_num > td:nth-child(2) > p {
     margin: 0;
 }
-.ph_num > td:nth-child(2) > p > input {
+.ph_num > td:nth-child(2) > p > label {
+    color: #777;
+}
+.ph_num > td:nth-child(2) > p > label > input {
     position: relative;
     bottom: -3px;
     padding-left: 5px;
@@ -143,11 +150,85 @@ td:nth-child(2) > input {
 .male {
     font-size: 12px;
 }
-.male > td > input {
+.male > td > label > input {
     width: 15px;
-    margin-right: 4px;
     position: relative;
-    top: 5px;
+    top: 2px;
 }
 
+
+/* 선택사항 */
+#choice_info {
+    margin-top: 30px;
+}
+
+#choice_info > h4 {
+    margin: 0;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+#choice_info > table {
+    width: 100%;
+}
+#choice_info button {
+    width: 90px;
+    height: 20px;
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+}
+
+.address > td {
+    padding-top: 3px;
+}
+.address td:nth-child(2) > div {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.address > td > div > label {
+    font-size: 12px;
+    color: #777;
+}
+.address > td > div > label > input {
+    position: relative;
+    bottom: -3px;
+    padding-left: 5px;
+    margin-right: 2px;
+}
+.address td:nth-child(2) > div > input {
+    width: 167px;
+    height: 20px;
+    background-color: #efefef;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+}
+/* // 선택사항 */
+
+
+/* 버튼 */
+#login_btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#login_btn button {
+    width: 85px;
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+}
+#login_btn > a:nth-child(1) {
+    margin-right: 10px;
+}
+#login_btn > a:nth-child(1) > button {
+    background-color: #af262d;
+    color: white;
+}
+#login_btn > a:nth-child(2) > button {
+    background-color: #777;
+    color: white;
+}
+/* // 버튼 */
 /* 회원가입 하단 */
